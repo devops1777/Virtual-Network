@@ -1,20 +1,7 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
-
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
-
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
-
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
-
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+This Terraform configuration will create an Azure resource group, a virtual network, and a network security group on Azure.
+The configuration begins by specifying the provider and version to use, and then defines the resources that will be created.
+The first resource defined is an Azure resource group, which will contain all of the other resources. The name and location of the resource group are set to "Tarun-VN" and "UK South", respectively.
+Next, an Azure network security group is created and associated with the resource group. The name and location of the security group are also set to "Tarun-NSG" and "UK South", respectively.
+Then, an Azure virtual network is created and associated with the resource group. The name, location, address space, and DNS servers of the virtual network are all specified. The virtual network also has two subnets, both with their own name, address prefix, and security group. The virtual network is also given some tags.
+Once you have written this configuration file, you can use Terraform to create the resources on Azure by running the following command: terraform apply. This will create the resources on Azure and output the resulting resource IDs.
